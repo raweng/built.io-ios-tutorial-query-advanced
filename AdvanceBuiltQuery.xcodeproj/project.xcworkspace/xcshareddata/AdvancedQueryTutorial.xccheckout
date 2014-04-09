@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>7287C5DC-05C8-4E85-9347-7E29EB26DE46</string>
+	<string>88C8FBC5-2536-42F9-9FDD-72C72A3A0966</string>
 	<key>IDESourceControlProjectName</key>
 	<string>AdvancedQueryTutorial</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>14723248-0745-474C-9896-612F9288DD47</key>
-		<string>https://github.com/raweng/built.io-ios-tutorial-query-advanced</string>
+		<key>3A51655C-AF2E-4302-B73E-4F2AADA882F7</key>
+		<string>https://github.com/raweng/built.io-ios-tutorial-query-advanced.git</string>
 		<key>59C079A9-B810-434F-8629-2FB13AEFFE9D</key>
 		<string>https://github.com/raweng/built.io-ios-framework</string>
 	</dict>
@@ -19,24 +19,24 @@
 	<string>AdvancedQueryTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>14723248-0745-474C-9896-612F9288DD47</key>
+		<key>3A51655C-AF2E-4302-B73E-4F2AADA882F7</key>
 		<string>../..</string>
 		<key>59C079A9-B810-434F-8629-2FB13AEFFE9D</key>
 		<string>../../built.io-ios-framework</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/raweng/built.io-ios-tutorial-query-advanced</string>
+	<string>https://github.com/raweng/built.io-ios-tutorial-query-advanced.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>14723248-0745-474C-9896-612F9288DD47</string>
+	<string>3A51655C-AF2E-4302-B73E-4F2AADA882F7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>14723248-0745-474C-9896-612F9288DD47</string>
+			<string>3A51655C-AF2E-4302-B73E-4F2AADA882F7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>built</string>
 		</dict>
