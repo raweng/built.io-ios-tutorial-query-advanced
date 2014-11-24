@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D375C81A2306F6004B0EED /* AdvanceBuiltQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D375C71A2306F6004B0EED /* AdvanceBuiltQueryTests.m */; };
 		BA08A18018ED37340016C311 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA08A17E18ED37340016C311 /* BuiltIO.bundle */; };
 		BA08A18118ED37340016C311 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA08A17F18ED37340016C311 /* BuiltIO.framework */; };
 		BA41659418E15C6900858772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA41659318E15C6900858772 /* Foundation.framework */; };
@@ -16,11 +17,6 @@
 		BA4165A018E15C6900858772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41659F18E15C6900858772 /* main.m */; };
 		BA4165A418E15C6900858772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4165A318E15C6900858772 /* AppDelegate.m */; };
 		BA4165A618E15C6900858772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4165A518E15C6900858772 /* Images.xcassets */; };
-		BA4165AD18E15C6900858772 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4165AC18E15C6900858772 /* XCTest.framework */; };
-		BA4165AE18E15C6900858772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA41659318E15C6900858772 /* Foundation.framework */; };
-		BA4165AF18E15C6900858772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA41659718E15C6900858772 /* UIKit.framework */; };
-		BA4165B718E15C6900858772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA4165B518E15C6900858772 /* InfoPlist.strings */; };
-		BA4165B918E15C6900858772 /* BuiltQueryAdvancedDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4165B818E15C6900858772 /* BuiltQueryAdvancedDemoTests.m */; };
 		BA4165C318E1A9E400858772 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4165C218E1A9E400858772 /* SystemConfiguration.framework */; };
 		BA4165C518E1A9E900858772 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4165C418E1A9E900858772 /* Accounts.framework */; };
 		BA4165C718E1A9EF00858772 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4165C618E1A9EF00858772 /* CFNetwork.framework */; };
@@ -35,16 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BA4165B018E15C6900858772 /* PBXContainerItemProxy */ = {
+		23D375C91A2306F6004B0EED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA41658818E15C6900858772 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BA41658F18E15C6900858772;
-			remoteInfo = BuiltQueryAdvancedDemo;
+			remoteInfo = AdvanceBuiltQuery;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D375C31A2306F6004B0EED /* AdvanceBuiltQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceBuiltQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D375C61A2306F6004B0EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D375C71A2306F6004B0EED /* AdvanceBuiltQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceBuiltQueryTests.m; sourceTree = "<group>"; };
 		BA08A17E18ED37340016C311 /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
 		BA08A17F18ED37340016C311 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 		BA41659018E15C6900858772 /* AdvanceBuiltQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceBuiltQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +57,6 @@
 		BA4165A218E15C6900858772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA4165A318E15C6900858772 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA4165A518E15C6900858772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BA4165AB18E15C6900858772 /* AdvanceBuiltQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceBuiltQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4165AC18E15C6900858772 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BA4165B418E15C6900858772 /* AdvanceBuiltQueryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdvanceBuiltQueryTests-Info.plist"; sourceTree = "<group>"; };
 		BA4165B618E15C6900858772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -79,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23D375C01A2306F6004B0EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA41658D18E15C6900858772 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,24 +104,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA4165A818E15C6900858772 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4165AD18E15C6900858772 /* XCTest.framework in Frameworks */,
-				BA4165AF18E15C6900858772 /* UIKit.framework in Frameworks */,
-				BA4165AE18E15C6900858772 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D375C41A2306F6004B0EED /* AdvanceBuiltQueryTests */ = {
+			isa = PBXGroup;
+			children = (
+				23D375C71A2306F6004B0EED /* AdvanceBuiltQueryTests.m */,
+				23D375C51A2306F6004B0EED /* Supporting Files */,
+			);
+			path = AdvanceBuiltQueryTests;
+			sourceTree = "<group>";
+		};
+		23D375C51A2306F6004B0EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23D375C61A2306F6004B0EED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BA41658718E15C6900858772 = {
 			isa = PBXGroup;
 			children = (
 				BA41659918E15C6900858772 /* BuiltQueryAdvancedDemo */,
 				BA4165B218E15C6900858772 /* BuiltQueryAdvancedDemoTests */,
+				23D375C41A2306F6004B0EED /* AdvanceBuiltQueryTests */,
 				BA41659218E15C6900858772 /* Frameworks */,
 				BA41659118E15C6900858772 /* Products */,
 			);
@@ -126,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BA41659018E15C6900858772 /* AdvanceBuiltQuery.app */,
-				BA4165AB18E15C6900858772 /* AdvanceBuiltQueryTests.xctest */,
+				23D375C31A2306F6004B0EED /* AdvanceBuiltQueryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +221,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		23D375C21A2306F6004B0EED /* AdvanceBuiltQueryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D375CB1A2306F6004B0EED /* Build configuration list for PBXNativeTarget "AdvanceBuiltQueryTests" */;
+			buildPhases = (
+				23D375BF1A2306F6004B0EED /* Sources */,
+				23D375C01A2306F6004B0EED /* Frameworks */,
+				23D375C11A2306F6004B0EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23D375CA1A2306F6004B0EED /* PBXTargetDependency */,
+			);
+			name = AdvanceBuiltQueryTests;
+			productName = AdvanceBuiltQueryTests;
+			productReference = 23D375C31A2306F6004B0EED /* AdvanceBuiltQueryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BA41658F18E15C6900858772 /* AdvanceBuiltQuery */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA4165BC18E15C6900858772 /* Build configuration list for PBXNativeTarget "AdvanceBuiltQuery" */;
@@ -225,24 +256,6 @@
 			productReference = BA41659018E15C6900858772 /* AdvanceBuiltQuery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA4165AA18E15C6900858772 /* AdvanceBuiltQueryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA4165BF18E15C6900858772 /* Build configuration list for PBXNativeTarget "AdvanceBuiltQueryTests" */;
-			buildPhases = (
-				BA4165A718E15C6900858772 /* Sources */,
-				BA4165A818E15C6900858772 /* Frameworks */,
-				BA4165A918E15C6900858772 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA4165B118E15C6900858772 /* PBXTargetDependency */,
-			);
-			name = AdvanceBuiltQueryTests;
-			productName = BuiltQueryAdvancedDemoTests;
-			productReference = BA4165AB18E15C6900858772 /* AdvanceBuiltQueryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,7 +265,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = raweng;
 				TargetAttributes = {
-					BA4165AA18E15C6900858772 = {
+					23D375C21A2306F6004B0EED = {
+						CreatedOnToolsVersion = 6.1;
 						TestTargetID = BA41658F18E15C6900858772;
 					};
 				};
@@ -270,12 +284,19 @@
 			projectRoot = "";
 			targets = (
 				BA41658F18E15C6900858772 /* AdvanceBuiltQuery */,
-				BA4165AA18E15C6900858772 /* AdvanceBuiltQueryTests */,
+				23D375C21A2306F6004B0EED /* AdvanceBuiltQueryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23D375C11A2306F6004B0EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA41658E18E15C6900858772 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,17 +307,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA4165A918E15C6900858772 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4165B718E15C6900858772 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23D375BF1A2306F6004B0EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D375C81A2306F6004B0EED /* AdvanceBuiltQueryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA41658C18E15C6900858772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,21 +329,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA4165A718E15C6900858772 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4165B918E15C6900858772 /* BuiltQueryAdvancedDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA4165B118E15C6900858772 /* PBXTargetDependency */ = {
+		23D375CA1A2306F6004B0EED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BA41658F18E15C6900858772 /* AdvanceBuiltQuery */;
-			targetProxy = BA4165B018E15C6900858772 /* PBXContainerItemProxy */;
+			targetProxy = 23D375C91A2306F6004B0EED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -346,6 +359,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23D375CC1A2306F6004B0EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AdvanceBuiltQueryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvanceBuiltQuery.app/AdvanceBuiltQuery";
+			};
+			name = Debug;
+		};
+		23D375CD1A2306F6004B0EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AdvanceBuiltQueryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvanceBuiltQuery.app/AdvanceBuiltQuery";
+			};
+			name = Release;
+		};
 		BA4165BA18E15C6900858772 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -450,51 +507,17 @@
 			};
 			name = Release;
 		};
-		BA4165C018E15C6900858772 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuiltQueryAdvancedDemo.app/BuiltQueryAdvancedDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BuiltQueryAdvancedDemo/BuiltQueryAdvancedDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BuiltQueryAdvancedDemoTests/AdvanceBuiltQueryTests-Info.plist";
-				PRODUCT_NAME = AdvanceBuiltQueryTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		BA4165C118E15C6900858772 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuiltQueryAdvancedDemo.app/BuiltQueryAdvancedDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BuiltQueryAdvancedDemo/BuiltQueryAdvancedDemo-Prefix.pch";
-				INFOPLIST_FILE = "BuiltQueryAdvancedDemoTests/AdvanceBuiltQueryTests-Info.plist";
-				PRODUCT_NAME = AdvanceBuiltQueryTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23D375CB1A2306F6004B0EED /* Build configuration list for PBXNativeTarget "AdvanceBuiltQueryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D375CC1A2306F6004B0EED /* Debug */,
+				23D375CD1A2306F6004B0EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BA41658B18E15C6900858772 /* Build configuration list for PBXProject "AdvanceBuiltQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -509,15 +532,6 @@
 			buildConfigurations = (
 				BA4165BD18E15C6900858772 /* Debug */,
 				BA4165BE18E15C6900858772 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA4165BF18E15C6900858772 /* Build configuration list for PBXNativeTarget "AdvanceBuiltQueryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA4165C018E15C6900858772 /* Debug */,
-				BA4165C118E15C6900858772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
