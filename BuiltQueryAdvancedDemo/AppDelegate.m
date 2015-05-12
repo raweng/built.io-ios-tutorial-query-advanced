@@ -20,8 +20,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [Built initializeWithApiKey:@"bltb69ac12834c6339b" andUid:@"built_query_advanced_demo"];
-    
+    self.builtApplication = [Built applicationWithAPIKey:@"bltb69ac12834c6339b"];
     QueryConditionsViewController *conditions = [[QueryConditionsViewController alloc]init];
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
@@ -33,6 +32,10 @@
     [self.window setRootViewController:nvc];
 
     return YES;
+}
+
++ (AppDelegate*)sharedInstance {
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

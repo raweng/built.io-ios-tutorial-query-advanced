@@ -7,22 +7,27 @@
 //
 
 #import "QueryViewController.h"
-
+#import "AppDelegate.h"
 @interface QueryViewController ()
 
 @end
 
 @implementation QueryViewController
 
-- (id)initWithStyle:(UITableViewStyle)style{
-    self = [super initWithStyle:style];
+- (id)initWithStyle:(UITableViewStyle)style withBuiltClass:(BuiltClass *)builtClass{
+    self = [super initWithStyle:style withBuiltClass:builtClass];
     if (self) {
         // Custom initialization
+        self.title = @"Result";
         self.enablePullToRefresh = YES;
         self.fetchLimit = 99;
-        self.title = @"Result";        
     }
     return self;
+}
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -56,7 +61,8 @@
 
 - (void)inQuery{
     //query where running time is less than 120 minutes
-    BuiltQuery *movieQuery = [BuiltQuery queryWithClassUID:@"movie"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"movie"];
+    BuiltQuery *movieQuery = [builtClass query];
     [movieQuery whereKey:@"running_time" lessThan:[NSNumber numberWithInt:120]];
     
     //we want all those nominees that belong to a movie with running time less than 120 minutes
@@ -64,14 +70,16 @@
 }
 
 - (void)notinQuery{
-    BuiltQuery *movieQuery = [BuiltQuery queryWithClassUID:@"movie"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"movie"];
+    BuiltQuery *movieQuery = [builtClass query];
     [movieQuery whereKey:@"running_time" lessThan:[NSNumber numberWithInt:120]];
-    [self.builtQuery notinQuery:movieQuery forKey:@"movie"];
+    [self.builtQuery notInQuery:movieQuery forKey:@"movie"];
 }
 
 - (void)selectQuery{
     //query where running time is less than 120 minutes
-    BuiltQuery *movieQuery = [BuiltQuery queryWithClassUID:@"movie"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"movie"];
+    BuiltQuery *movieQuery = [builtClass query];
     [movieQuery whereKey:@"running_time" lessThan:[NSNumber numberWithInt:120]];
     
     //we want to compare the movie_text field of this("nominees") class with title field of "movie" class
@@ -79,7 +87,8 @@
 }
 
 - (void)notselectQuery{
-    BuiltQuery *movieQuery = [BuiltQuery queryWithClassUID:@"movie"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"movie"];
+    BuiltQuery *movieQuery = [builtClass query];
     [movieQuery whereKey:@"running_time" lessThan:[NSNumber numberWithInt:120]];
     
     [self.builtQuery whereKey:@"movie_text" equalToResultOfDontSelectQuery:movieQuery forKey:@"title"];
@@ -87,11 +96,12 @@
 
 - (void)orQueries{
     //born in United States
-    BuiltQuery *query1 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"nominees"];
+    BuiltQuery *query1 = [builtClass query];
     [query1 whereKey:@"born" equalTo:@"United States"];
     
     //born in United Kingdom
-    BuiltQuery *query2 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltQuery *query2 = [builtClass query];
     [query2 whereKey:@"born" equalTo:@"United Kingdom"];
     
     //query1 OR query2
@@ -100,19 +110,20 @@
 
 - (void)andQueries{
     //born in United States
-    BuiltQuery *query1 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltClass *builtClass = [[AppDelegate sharedInstance].builtApplication classWithUID:@"nominees"];
+    BuiltQuery *query1 = [builtClass query];
     [query1 whereKey:@"born" equalTo:@"United States"];
 
     //born in United Kingdom
-    BuiltQuery *query2 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltQuery *query2 = [builtClass query];
     [query2 whereKey:@"born" equalTo:@"United Kingdom"];
     
     //query3 = query1 OR query2
-    BuiltQuery *query3 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltQuery *query3 = [builtClass query];
     [query3 orWithSubqueries:@[query1,query2]];
 
     //age<=40
-    BuiltQuery *query4 = [BuiltQuery queryWithClassUID:@"nominees"];
+    BuiltQuery *query4 = [builtClass query];
     [query4 whereKey:@"age" lessThanOrEqualTo:[NSNumber numberWithInt:40]];
 
     //query3 AND query4
